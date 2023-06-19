@@ -15,6 +15,10 @@ def main(data_path):
     testdf.to_csv(os.path.join(data_path, 'test.csv'), index=False)
 
 
+def prepare_for_model(df):
+    pass
+
+
 if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('--data_path', default='../data')
